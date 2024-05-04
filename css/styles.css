@@ -1,0 +1,135 @@
+a,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+body,
+input,
+button,
+textarea,
+form,
+table,
+th,
+td,
+tr {
+    margin: 0em;
+    padding: 0em;
+    color: #4a4a4a;
+    text-decoration: none;
+    font-family: "Inter";
+    list-style-type: none;
+    background-color: transparent;
+    border: none;
+    border-collapse: collapse;
+    font-size: 1em;
+}
+
+/*Layout*/
+body {
+    background-color: #23558f;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 30em;
+    width: 100%;
+    border-radius: 0.5em;
+    background-color: #FFFFFF;
+    box-shadow: 0 0.313em 0.625em rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 25px;
+}
+
+/*Header*/
+.header {
+    background-color: #fbbb53;
+    padding: 1.25em;
+    border-radius: 0.5em 0.5em 0em 0em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*Input*/
+.container .input-field {
+    width: 100%;
+}
+
+.input-field textarea {
+    width: 100%;
+    outline: none;
+    border-radius: 0.5em;
+    padding: 1.125em 2.813em 1.125em 15px;
+    border: 1px solid #4a4a4a;
+    resize: none;
+    margin-bottom: 0.625em;
+    box-sizing: border-box;
+}
+
+/*todoLists*/
+.container .todoLists {
+    max-height: 380px;
+    overflow-y: auto;
+}
+
+.todoLists .list {
+    display: flex;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 1.25em 0.938em;
+    border-radius: 0.5em;
+    margin-top: 0.625em;
+    position: relative;
+    cursor: pointer;
+}
+
+.todoLists .list .task {
+    margin: 0 1.875em 0 0.938em;
+    word-break: break-all;
+}
+
+.todoLists .list input {
+    accent-color: #2298d6;
+    pointer-events: none;
+}
+
+/*Pending task*/
+.container .pending-tasks {
+    display: flex;
+    align-items: center;
+    margin-top: 1.563em;
+}
+
+/*Button*/
+.pending-tasks .clear-button {
+    padding: 0.375em 0.75em;
+    background: #2298d6;
+    color: #FFFFFF;
+    border-radius: 0.25em;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/*Pseudo element*/
+.input-field textarea:focus {
+    border-color: #2298d6;
+}
+
+.list input:checked~.task {
+    text-decoration: line-through;
+}
+
+.clear-button:hover {
+    background-color: #0e4bf1;
+}
