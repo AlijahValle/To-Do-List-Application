@@ -42,7 +42,7 @@ body {
 .container {
     max-width: 30em;
     width: 100%;
-    border-radius: 0.5em;
+    border-radius: 0.8em;
     background-color: #FFFFFF;
     box-shadow: 0 0.313em 0.625em rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
